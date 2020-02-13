@@ -1,0 +1,55 @@
+.nav{
+    background-color: #000;
+    color: white;
+}
+
+.section-table{
+    background-color: #000;
+    color: white;
+}
+
+.table{
+    border: 2px solid white;
+}
+.table__row:nth-child(even){
+    background-color: #000;
+}
+
+.section-films{
+    background-color: rgb(19, 16, 16);
+}
+.myFilms{
+    color: white;
+}
+.film__card-front{
+    background-color: #000;
+    box-shadow: 1px 1px 20px 1px white;
+}
+.film__card-back{
+    box-shadow: 1px 1px 20px 1px white;
+}
+.section-about{
+    background-color: #000;
+}
+.about-me{
+    color: white;
+}
+.my-mood{
+    box-shadow: 2px 2px 15px 2px white;
+}
+.sity{
+    background-color: #000;
+    color: white;
+}
+.sity__slider{
+    border-color: white;
+}
+
+.section-model{
+    background-color: #000;
+}
+.side{
+    background-color: #fff;
+    border-color: white;
+    color: black;
+}
