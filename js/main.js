@@ -51,7 +51,7 @@ nextSlide.addEventListener('click',()=>{
     let y = html.scrollTop;
     let interval = setInterval(()=>{
         window.scrollTo(0,y);
-        if(sections[0].getBoundingClientRect().y < 10 && sections[0].getBoundingClientRect().y > -10)
+        if(sections[0].getBoundingClientRect().y < 13 && sections[0].getBoundingClientRect().y > -13)
         {
             clearInterval(interval);
         }
