@@ -60,8 +60,17 @@ nextSlide.addEventListener('click',()=>{
 })
 
 //----------------------------------------------------------------
-let headerButton = document.querySelectorAll('.header__button');
+let contact = document.querySelector('.button__contact');
+let cancelContact = document.querySelector('.cancel-contact');
 
+    contact.addEventListener('click',()=>{
+        document.querySelector('.header__contact-container').style.display = 'block';
+        document.body.style.overflowY = 'hidden';
+    })
+    cancelContact.addEventListener('click',()=>{
+        document.querySelector('.header__contact-container').style.display = 'none';
+        document.body.style.overflow = ' ';
+    })
 
 
 
