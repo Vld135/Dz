@@ -1,5 +1,5 @@
 .nav{
-    background-color: #000;
+    background-color: rgb(27, 27, 27);
     color: white;
 }
 
@@ -47,4 +47,15 @@
 
 .section-model{
     background-color: #000;
+}
+.navigate{
+    background-color: #000;
+}
+.burger::before,
+.burger::after{
+    background-color: #fff;
+}
+.burger span{
+    
+    background-color: #fff;
 }

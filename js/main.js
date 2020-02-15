@@ -2,17 +2,41 @@ let nav = document.querySelector('#list-nav'),
     items = document.querySelectorAll('#item'),
     sections = document.querySelectorAll('section');
 
+    //-----------------burger-------------------
+    let burger = document.querySelector('.burger');
+
+    burger.addEventListener('click',()=>{
+        document.querySelector('.navigate').classList.toggle('activ-menu');
+        burger.classList.toggle('activ-menu');
+    })
+
+    //-------------------
     nav.addEventListener('click',(e)=>{
         items.forEach((elem,i)=>{
             if(e.target==elem){
-                let y=0;
+                if(document.querySelector('.navigate').classList.contains('activ-menu')){
+                    document.querySelector('.navigate').classList.remove('activ-menu');
+                }
+                if(burger.classList.contains('activ-menu')){
+                    burger.classList.remove('activ-menu');
+                }
+
+                let y=html.scrollTop;
+                let step =0;
+               if(sections[i].getBoundingClientRect().y<0)
+                {
+                    step = -25;
+                }
+                 else step = 25;
                 let interval = setInterval(()=>{
                     window.scrollTo(0,y);
-                    if(sections[i].getBoundingClientRect().y < 10 && sections[i].getBoundingClientRect().y > -10)
+                    console.log(html.scrollTop,sections[i].scrollTop)
+                    if(sections[i].getBoundingClientRect().y < 13 && sections[i].getBoundingClientRect().y > -13)
                     {
                         clearInterval(interval);
                     }
-                    y+=25;
+                    
+                     y+=step;
                 },1)
             }
         })
@@ -24,7 +48,7 @@ let nav = document.querySelector('#list-nav'),
 let nextSlide = document.querySelector('.next-slide__border');
 
 nextSlide.addEventListener('click',()=>{
-    let y = 0;
+    let y = html.scrollTop;
     let interval = setInterval(()=>{
         window.scrollTo(0,y);
         if(sections[0].getBoundingClientRect().y < 10 && sections[0].getBoundingClientRect().y > -10)
@@ -63,7 +87,6 @@ let filmCard = document.querySelectorAll('.film__card'),
     }
 
     
-//------------------------------------
 
 
 //------------------------------------
@@ -166,3 +189,6 @@ model.addEventListener('touchstart',(e)=>{
 document.addEventListener('touchend',()=>{
     position.move = false;
 })
+
+
+//-----------------------------------------------
