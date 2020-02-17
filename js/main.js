@@ -45,9 +45,9 @@ let nav = document.querySelector('#list-nav'),
 
 // ---------------------------------------------------------------
 
-let nextSlide = document.querySelector('.next-slide__border');
+let nextSection = document.querySelector('.next-slide__border');
 
-nextSlide.addEventListener('click',()=>{
+nextSection.addEventListener('click',()=>{
     let y = html.scrollTop;
     let interval = setInterval(()=>{
         window.scrollTo(0,y);
@@ -115,10 +115,7 @@ up.addEventListener('click',()=>{
     }
 })
 
-// let  head = document.querySelector('head');
-
-// head.innerHTML += '<link rel="stylesheet" href="/css/dark.css">';
-// console.log(head);
+//-----------white-dark----------------
 
 let checkboxDark = document.querySelector('#dark'),
     labelDark = document.querySelector('.label-mod');
@@ -130,11 +127,52 @@ labelDark.addEventListener('click',()=>{
         darkcss.href = 'css/dark.css';
         let  head = document.querySelector('head');
         head.append(darkcss);
+        localStorage.setItem('pageStyle','black');
     }
     else{
         darkcss.remove();
+        localStorage.removeItem('pageStyle');
     }
 })
+if(localStorage.getItem('pageStyle')=='black'){
+        darkcss = document.createElement('link');
+        darkcss.rel = 'stylesheet';
+        darkcss.href = 'css/dark.css';
+        let  head = document.querySelector('head');
+        head.append(darkcss);   
+        checkboxDark.checked = true;
+}
+//-----------Slider----------------------------------
+
+let img = document.querySelectorAll('.sity__slider-img'),
+    next = document.querySelector('.next'),
+    prev = document.querySelector('.prev'),
+    index = 0;
+
+    function hidden(){
+        img.forEach((elem)=>{
+            elem.classList.add('opasity');
+        })
+    }
+    hidden();
+    img[0].classList.remove('opasity');
+
+    next.addEventListener('click',()=>{
+        index++;
+        if(index>img.length-1){
+            index = 0;
+        }
+        hidden();
+        img[index].classList.remove('opasity');
+    })
+    prev.addEventListener('click',()=>{
+        index--;
+        if(index<0){
+            index = img.length-1;
+        }
+        hidden();
+        img[index].classList.remove('opasity');
+    })
 
 //--------------PC control----------------------------
 
@@ -162,16 +200,6 @@ document.addEventListener('mouseup',()=>{
     position.move = false;
 })
 //------------mobile control----------------
-
-// let Up = document.querySelector('.up'),
-//     Down = document.querySelector('.down'),
-//     Right = document.querySelector('.right'),
-//     Left = document.querySelector('.left');
-
-//     Up.addEventListener('touchenter',()=>{
-//         position.y +=4;
-//         model.style.transform ='rotateY(' + position.x + 'deg)' +'rotateX(' + position.y +'deg)';
-//     })
 
 model.addEventListener('touchstart',(e)=>{
 
