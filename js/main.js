@@ -1,5 +1,5 @@
 let nav = document.querySelector('#list-nav'),
-    items = document.querySelectorAll('#item'),
+    items = document.querySelectorAll('.item'),
     sections = document.querySelectorAll('section');
 
     //-----------------burger-------------------
