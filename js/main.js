@@ -59,6 +59,19 @@ nextSection.addEventListener('click',()=>{
     },1)
 })
 
+let project = document.querySelector('.button__project');
+project.addEventListener('click',()=>{
+    let y = html.scrollTop;
+    let interval = setInterval(()=>{
+        window.scrollTo(0,y);
+        if(sections[sections.length-1].getBoundingClientRect().y < 13 && sections[sections.length-1].getBoundingClientRect().y > -13)
+        {
+            clearInterval(interval);
+        }
+        y+=25;
+    },1)
+})
+
 //----------------------------------------------------------------
 let contact = document.querySelector('.button__contact');
 let cancelContact = document.querySelector('.cancel-contact');
