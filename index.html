@@ -1,367 +1,421 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Моя личная страница</title>
-    <link rel="shortcut icon" href="img/other/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/main.css" id="style">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="img/other/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/main.css" id="style" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+  </head>
+  <body>
     <header class="header">
-        <nav class="nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-7 col-md-3 col-lg-4">
-                        <div class="logo">My Logo</div>
-                    </div>
-                    <div class="col-5 col-md-9 col-lg-8">
-                        <div class="burger">
-                            <span></span>
-                        </div>
-                        <div class="navigate">
-                            <ul class="list" id="list-nav">
-                                <li class="list__item item" >Оценки</li>
-                                <li class="list__item item" >Фильмы</li>
-                                <li class="list__item item" >Обо мне</li>
-                                <li class="list__item item" >Мой город</li>
-                                <li class="list__item item" >Проект</li>
-                            </ul> 
-                        </div>
-                    </div> 
-                </div>
-            </div>
-            
-
-        </nav>
+      <nav class="nav">
         <div class="container">
-            <div class="button-dark">
-                <input type="checkbox" class="input-mod" id="dark">
-                <label for="dark" class="label-mod"></label>
+          <div class="row">
+            <div class="col-7 col-md-3 col-lg-4">
+              <div class="logo">My Logo</div>
             </div>
-            <div class="header__content">
-                <div class="row">
-                    <div class="col-md-12  col-lg-12 ">
-                        <div class="header__title">
-                            Web developer project
-                        </div>
-                        <div class="header__subtitle">
-                            Меня зовут Влад и это мое дз по вебу)
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-                <div class="row ">
-                    <div class="col-3 offset-1 col-sm-3 offset-sm-2 col-md-5  offset-md-1 col-lg-3 offset-lg-3 ">
-                        <div class="header__button button__project">проект</div>
-
-                    </div>
-                    <div class="col-6 offset-1 col-sm-6 offset-sm-1  col-md-5 offset-md-0 col-lg-3">
-                        <div class="header__button button__contact">Контакты</div>
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="col-12 ">
-                        <div class="next-slide ">
-                            <div class="next-slide__border">
-                                ▼
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
+            <div class="col-5 col-md-9 col-lg-8">
+              <div class="burger">
+                <span></span>
+              </div>
+              <div class="navigate">
+                <ul class="list" id="list-nav">
+                  <li class="list__item item">Оценки</li>
+                  <li class="list__item item">Фильмы</li>
+                  <li class="list__item item">Обо мне</li>
+                  <li class="list__item item">Мой город</li>
+                  <li class="list__item item">Проект</li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="header__contact-container">
-            <div class="header__contact">
-                <span class="cancel-contact">
-
-                </span>
-                <p>Заполните форму и возможно я вам перезвоню))</p>
-                    Скоро доделаю)
-                
-            </div>
+      </nav>
+      <div class="container">
+        <div class="button-dark">
+          <input type="checkbox" class="input-mod" id="dark" />
+          <label for="dark" class="label-mod"></label>
         </div>
+        <div class="header__content">
+          <div class="row">
+            <div class="col-md-12 col-lg-12">
+              <div class="header__title">
+                Web developer project
+              </div>
+              <div class="header__subtitle">
+                Меня зовут Влад и это мое дз по вебу)
+              </div>
+            </div>
+          </div>
+          <!-- /.row -->
+          <div class="row">
+            <div
+              class="col-3 offset-1 col-sm-3 offset-sm-2 col-md-5 offset-md-1 col-lg-3 offset-lg-3"
+            >
+              <div class="header__button button__project">проект</div>
+            </div>
+            <div
+              class="col-6 offset-1 col-sm-6 offset-sm-1 col-md-5 offset-md-0 col-lg-3"
+            >
+              <div class="header__button button__contact">Контакты</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="next-slide">
+                <div class="next-slide__border">
+                  ▼
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+      </div>
+      <div class="header__contact-container">
+        <div class="header__contact">
+          <span class="cancel-contact"> </span>
+          <p>Заполните форму и возможно я вам перезвоню))</p>
+          Скоро доделаю)
+        </div>
+      </div>
     </header>
-
     <section class="section-table">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="title">
-                        Оценки за прошлый семестр
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title">
+              Оценки за прошлый семестр
             </div>
-            <div class="row">
-                <div class="col-lg-12 justify-content-center">
-                    <div class="container-table">
-                        <table class="table">
-                            <tr class="table__row">
-                                <th class="table__th">Препод</th>
-                                <th class="table__th">Предмет</th>
-                                <th class="table__th">Оценка</th>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__col">Татаринова</td>
-                                <td class="table__col">Дискретка</td>
-                                <td class="table__col">90</td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__col">Михлин</td>
-                                <td class="table__col">Дифуры</td>
-                                <td class="table__col">84</td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__col">Натарова</td>
-                                <td class="table__col">Фв</td>
-                                <td class="table__col">60</td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__col">йцуцуава</td>
-                                <td class="table__col">Англ</td>
-                                <td class="table__col">60</td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__col">Федченко</td>
-                                <td class="table__col">Начерталка</td>
-                                <td class="table__col">84</td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__col">вавава</td>
-                                <td class="table__col">Архитектура</td>
-                                <td class="table__col">60</td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__col">Водка</td>
-                                <td class="table__col">Прога</td>
-                                <td class="table__col">90</td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__col">Семко</td>
-                                <td class="table__col">Право</td>
-                                <td class="table__col">85</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-lg-12 justify-content-center">
+            <div class="container-table">
+              <table class="table">
+                <tr class="table__row">
+                  <th class="table__th">Препод</th>
+                  <th class="table__th">Предмет</th>
+                  <th class="table__th">Оценка</th>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__col">Татаринова</td>
+                  <td class="table__col">Дискретка</td>
+                  <td class="table__col">90</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__col">Михлин</td>
+                  <td class="table__col">Дифуры</td>
+                  <td class="table__col">84</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__col">Натарова</td>
+                  <td class="table__col">Фв</td>
+                  <td class="table__col">60</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__col">йцуцуава</td>
+                  <td class="table__col">Англ</td>
+                  <td class="table__col">60</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__col">Федченко</td>
+                  <td class="table__col">Начерталка</td>
+                  <td class="table__col">84</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__col">вавава</td>
+                  <td class="table__col">Архитектура</td>
+                  <td class="table__col">60</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__col">Водка</td>
+                  <td class="table__col">Прога</td>
+                  <td class="table__col">90</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__col">Семко</td>
+                  <td class="table__col">Право</td>
+                  <td class="table__col">85</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
-
     <section class="section-films">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12"> 
-                    <div class="myFilms">
-                        Мои любимые фильмы
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="myFilms">
+              Мои любимые фильмы
             </div>
-            <div class="row">
-                <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
-                    <div class="film">
-                        <div class="film__card inactive">
-                            <div class="film__card-front"></div>
-                            <div class="film__card-back"><img src="img/forsazh/fk1aVmXvJwxPStTZZYSqFg_s800.webp" alt="Форсаж 1"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-5 col-sm-6">
-                    <div class="film">
-                        <div class="film__card inactive">
-                            <div class="film__card-front"></div>
-                            <div class="film__card-back"><img src="img/forsazh/bigi4c921b2a4d092.webp" alt="Форсаж 2"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
-                    <div class="film">
-                        <div class="film__card inactive">
-                            <div class="film__card-front"></div>
-                            <div class="film__card-back"><img src="img/forsazh/d3aaeec74b859ba95y90l.webp" alt="Форсаж 3"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-5 col-sm-6">
-                    <div class="film">
-                        <div class="film__card inactive">
-                            <div class="film__card-front"></div>
-                            <div class="film__card-back"><img src="img/forsazh/20170415182102_Форсаж_4__Fast_And_Furious_.webp" alt="Форсаж 4"></div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-5 offset-md-1 col-sm-6 offset-lg-0">
-                    <div class="film">
-                        <div class="film__card inactive">
-                            <div class="film__card-front"></div>
-                            <div class="film__card-back"><img src="img/forsazh/forsazh-5-fast-five-2011_21411_0.webp" alt="Форсаж 5"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-5 col-sm-6">
-                    <div class="film">
-                        <div class="film__card inactive">
-                            <div class="film__card-front"></div>
-                            <div class="film__card-back"><img src="img/forsazh/274px-Fast_and_Furious_6.webp" alt="Форсаж 6"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-5 offset-md-1 col-sm-6 offset-lg-0">
-                    <div class="film">
-                        <div class="film__card inactive">
-                            <div class="film__card-front"></div>
-                            <div class="film__card-back"><img src="img/forsazh/50261285.webp" alt="Форсаж 7"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-5 col-sm-6">
-                    <div class="film">
-                        <div class="film__card inactive">
-                            <div class="film__card-front"></div>
-                            <div class="film__card-back"><img src="img/forsazh/daba886e1a5fear81m28b.webp" alt="Форсаж 8"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
+            <div class="film">
+              <div class="film__card inactive">
+                <div class="film__card-front"></div>
+                <div class="film__card-back">
+                  <img
+                    src="img/forsazh/fk1aVmXvJwxPStTZZYSqFg_s800.webp"
+                    alt="Форсаж 1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-5 col-sm-6">
+            <div class="film">
+              <div class="film__card inactive">
+                <div class="film__card-front"></div>
+                <div class="film__card-back">
+                  <img
+                    src="img/forsazh/bigi4c921b2a4d092.webp"
+                    alt="Форсаж 2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6">
+            <div class="film">
+              <div class="film__card inactive">
+                <div class="film__card-front"></div>
+                <div class="film__card-back">
+                  <img
+                    src="img/forsazh/d3aaeec74b859ba95y90l.webp"
+                    alt="Форсаж 3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-5 col-sm-6">
+            <div class="film">
+              <div class="film__card inactive">
+                <div class="film__card-front"></div>
+                <div class="film__card-back">
+                  <img
+                    src="img/forsazh/20170415182102_Форсаж_4__Fast_And_Furious_.webp"
+                    alt="Форсаж 4"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-5 offset-md-1 col-sm-6 offset-lg-0">
+            <div class="film">
+              <div class="film__card inactive">
+                <div class="film__card-front"></div>
+                <div class="film__card-back">
+                  <img
+                    src="img/forsazh/forsazh-5-fast-five-2011_21411_0.webp"
+                    alt="Форсаж 5"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-5 col-sm-6">
+            <div class="film">
+              <div class="film__card inactive">
+                <div class="film__card-front"></div>
+                <div class="film__card-back">
+                  <img
+                    src="img/forsazh/274px-Fast_and_Furious_6.webp"
+                    alt="Форсаж 6"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-5 offset-md-1 col-sm-6 offset-lg-0">
+            <div class="film">
+              <div class="film__card inactive">
+                <div class="film__card-front"></div>
+                <div class="film__card-back">
+                  <img src="img/forsazh/50261285.webp" alt="Форсаж 7" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-5 col-sm-6">
+            <div class="film">
+              <div class="film__card inactive">
+                <div class="film__card-front"></div>
+                <div class="film__card-back">
+                  <img
+                    src="img/forsazh/daba886e1a5fear81m28b.webp"
+                    alt="Форсаж 8"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
-    <hr>
+    <hr />
     <section class="section-about">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="about-me">
-                        Я добрый, отзывчивый, реалист
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="about-me">
+              Я добрый, отзывчивый, реалист
             </div>
-            <div class="row">
-                <div class="col-sm-4 ">
-                    <div class="my-mood-wrapper">
-                        <div class="my-mood">
-                            <img class="my-mood__img" src="img/mood/unnamed.webp" alt="Веселый">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 ">
-                    <div class="my-mood-wrapper">
-                        <div class="my-mood">
-                            <img class="my-mood__img" src="img/mood/cry.webp" alt="Грустный">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 ">
-                    <div class="my-mood-wrapper">
-                        <div class="my-mood">
-                            <img class="my-mood__img" src="img/mood/3.webp" alt="Серъезный">
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="my-mood-wrapper">
+              <div class="my-mood">
+                <img
+                  class="my-mood__img"
+                  src="img/mood/unnamed.webp"
+                  alt="Веселый"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="my-mood-wrapper">
+              <div class="my-mood">
+                <img
+                  class="my-mood__img"
+                  src="img/mood/cry.webp"
+                  alt="Грустный"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="my-mood-wrapper">
+              <div class="my-mood">
+                <img
+                  class="my-mood__img"
+                  src="img/mood/3.webp"
+                  alt="Серъезный"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <hr>
+    <hr />
     <section class="section sity">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    
-                    <div class="sity__text">
-                        <h3>Мариуполь</h3>
-                        Мариу́поль (укр. Маріу́поль, др.-греч. Μαριούπολις) — город Донецкой области 
-                        на юго-востоке Украины, крупнейший город на берегу Азовского моря в устье рек 
-                        Кальмиус и Кальчик. Центр Мариупольской агломерации. Численность наличного населения 
-                        города на 1 января 2016 года составляет 449 498 человека; в рамках горсовета 
-                        (с учётом посёлков городского типа Старый Крым, Сартана, Талаковка, сёл Гнутово, 
-                        Виноградное и посёлка Ломакино, подчинённых горсовету) — 470 968 человек. 
-                        С середины 2014 — место пребывания Донецкого областного совета.
-
-                        Один из важнейших центров украинской металлургии и машиностроения, крупный морской порт. 
-                        Климатический и грязевой курорт. Мариуполь входит в десятку крупнейших городов Украины, 
-                        является важнейшим промышленным и крупным экономическим центром страны. Район компактного 
-                        проживания греков Приазовья. В 2012 году был признан правительством Украины одним из самых 
-                        комфортных для проживания в стране городов.
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="sity__text">
+              <h3>Мариуполь</h3>
+              Мариу́поль (укр. Маріу́поль, др.-греч. Μαριούπολις) — город Донецкой
+              области на юго-востоке Украины, крупнейший город на берегу
+              Азовского моря в устье рек Кальмиус и Кальчик. Центр Мариупольской
+              агломерации. Численность наличного населения города на 1 января
+              2016 года составляет 449 498 человека; в рамках горсовета (с
+              учётом посёлков городского типа Старый Крым, Сартана, Талаковка,
+              сёл Гнутово, Виноградное и посёлка Ломакино, подчинённых
+              горсовету) — 470 968 человек. С середины 2014 — место пребывания
+              Донецкого областного совета. Один из важнейших центров украинской
+              металлургии и машиностроения, крупный морской порт. Климатический
+              и грязевой курорт. Мариуполь входит в десятку крупнейших городов
+              Украины, является важнейшим промышленным и крупным экономическим
+              центром страны. Район компактного проживания греков Приазовья. В
+              2012 году был признан правительством Украины одним из самых
+              комфортных для проживания в стране городов.
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="slider-wrap">
-                        
-                        <div class="sity__slider">
-                            <div class="prev"><img src="img/other/chevron-thin-left.png" alt=""></div>
-                            <img class="sity__slider-img" src="img/mariupol/3755744large-7604ce3fcef2e4c8069d5d62ab0b7339.webp" alt="Фото мариуполя 1">
-                            <img class="sity__slider-img" src="img/mariupol/picture2_morskoj-port-mari_356787_p0.webp" alt="Фото мариуполя 2">
-                            <img class="sity__slider-img" src="img/mariupol/ZKzse5_5cc0716dbc1d63_26620645-tmb-720x411xfill.webp" alt="Фото мариуполя 3">
-                            <!-- <img src="img/mariupol/Без названия.jpg" alt=""> -->
-                            <div class="next"><img src="img/other/chevron-thin-right.png" alt=""></div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="slider-wrap">
+              <div class="sity__slider">
+                <div class="prev">
+                  <img src="img/other/chevron-thin-left.png" alt="" />
+                </div>
+                <img
+                  class="sity__slider-img"
+                  src="img/mariupol/3755744large-7604ce3fcef2e4c8069d5d62ab0b7339.webp"
+                  alt="Фото мариуполя 1"
+                />
+                <img
+                  class="sity__slider-img"
+                  src="img/mariupol/picture2_morskoj-port-mari_356787_p0.webp"
+                  alt="Фото мариуполя 2"
+                />
+                <img
+                  class="sity__slider-img"
+                  src="img/mariupol/ZKzse5_5cc0716dbc1d63_26620645-tmb-720x411xfill.webp"
+                  alt="Фото мариуполя 3"
+                />
+                <!-- <img src="img/mariupol/Без названия.jpg" alt=""> -->
+                <div class="next">
+                  <img src="img/other/chevron-thin-right.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
-
     <section class="section-model">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="space-3d">
-                        <div class="model">
-                            <div class="side side-1">1</div>
-                            <div class="side side-2">2</div>
-                            <div class="side side-3">3</div>
-                            <div class="side side-4">4</div>
-                            <div class="side side-5">5</div>
-                            <div class="side side-6">6</div>
-                            
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="space-3d">
+              <div class="model">
+                <div class="side side-1">1</div>
+                <div class="side side-2">2</div>
+                <div class="side side-3">3</div>
+                <div class="side side-4">4</div>
+                <div class="side side-5">5</div>
+                <div class="side side-6">6</div>
+              </div>
             </div>
-             
+          </div>
         </div>
+      </div>
     </section>
-
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="container-button">
-                    <p class="container-button-up"></p>
-                </div>
-                <div class="col-sm-12 justify-content-center">
-                    <div class="footer__social">
-                        <ul class="footer__social-ul">
-                            <li class="footer__social-tg">
-                                <a href=""><img src="img/social/telegram.png" alt="telegram"></a>
-                            </li>
-                            <li class="footer__social-gm">
-                               <a href=""> <img src="img/social/gmail.png" alt="gmail"></a>
-                            </li>
-                            <li class="footer__social-inst">
-                                <a href=""><img src="img/social/instagram.png" alt="insta"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="container-button">
+            <p class="container-button-up"></p>
+          </div>
+          <div class="col-sm-12 justify-content-center">
+            <div class="footer__social">
+              <ul class="footer__social-ul">
+                <li class="footer__social-tg">
+                  <a href=""
+                    ><img src="img/social/telegram.png" alt="telegram"
+                  /></a>
+                </li>
+                <li class="footer__social-gm">
+                  <a href=""> <img src="img/social/gmail.png" alt="gmail" /></a>
+                </li>
+                <li class="footer__social-inst">
+                  <a href=""
+                    ><img src="img/social/instagram.png" alt="insta"
+                  /></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
-    
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
